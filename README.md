@@ -22,11 +22,11 @@ To plan my solution, I created a Domain Model:
 
 |Noun | Verb |
 |--------|--------|
-| game | has two players <br> determines winner or draw |
+| game | has two players <br> has a board <br> determines winner or draw |
 | player | has name |
 | turn | determines player turn |
-| move | fills field on board |
-| field | taken by X or O <br> empty |
+| move | belongs to a player <br> fills field on board |
+| field | filled with X, O or nil <br> can declare itself empty |
 | board | contains 9 fields in 3 x 3 grid |
 
 ### Test Coverage
