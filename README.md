@@ -23,8 +23,9 @@ To plan my solution, I created a Domain Model:
 |Noun | Verb |
 |--------|--------|
 | game | has two players <br> determines winner or draw |
+| player | has name |
 | turn | determines player turn |
-| player | has name (X or O) |
+| move | fills field on board |
 | field | taken by X or O <br> empty |
 | board | contains 9 fields in 3 x 3 grid |
 
