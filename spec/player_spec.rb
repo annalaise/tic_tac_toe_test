@@ -7,6 +7,9 @@ describe Player do
     it 'should instantiate with name of player' do
       expect(player.name).to eq "Tyrion Lannister"
     end
+    it 'should have a move set to nil by default' do
+      expect(player.turn). to eq nil
+    end
   end
 
-end 
+end
