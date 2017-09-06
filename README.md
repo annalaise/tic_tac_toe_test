@@ -23,7 +23,7 @@ To plan my solution, I created a Domain Model:
 |Noun | Verb |
 |--------|--------|
 | game | has two players <br> has a board <br> determines winner or draw |
-| player | has name |
+| player | has a name <br> has a turn value |
 | turn | determines player turn |
 | move | belongs to a player <br> fills field on board |
 | field | filled with X, O or nil <br> can declare itself empty |
