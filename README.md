@@ -20,7 +20,7 @@ Build the business logic for a game of tic tac toe. It should be easy to impleme
 
 To plan my solution, I created a Domain Model:
 
-|Noun | Verb |
+| Noun | Verb |
 |--------|--------|
 | play | controls stdout to terminal of gameplay |
 | game | has two players <br> has a board <br> determines winner or draw |
