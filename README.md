@@ -22,6 +22,7 @@ To plan my solution, I created a Domain Model:
 
 |Noun | Verb |
 |--------|--------|
+| play | controls stdout to terminal of gameplay |
 | game | has two players <br> has a board <br> determines winner or draw |
 | player | has a name <br> has a turn value |
 | turn | determines player turn |
