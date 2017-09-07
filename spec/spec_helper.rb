@@ -2,6 +2,8 @@ require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
 
+require 'test_helper.rb'
+
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console])
 
