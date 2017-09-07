@@ -1,9 +1,9 @@
 class Player
 
-  attr_reader :name, :turn
+  attr_accessor :name, :turn
 
-  def initialize(name)
-    @name = name
+  def initialize
+    @name = nil
     @turn = nil
   end
 

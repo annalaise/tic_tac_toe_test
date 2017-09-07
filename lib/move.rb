@@ -9,10 +9,10 @@ class Move
 
   def take
     case @player
-    when :player_x
-      field.cell << :x
     when :player_o
       field.cell << :o
+    when :player_x
+      field.cell << :x
     else
       raise "invalid player"
     end
