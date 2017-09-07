@@ -1,12 +1,19 @@
 class Field
-  attr_reader :contents
+  attr_reader :contents, :cell
 
   def initialize
     @contents = nil
+    @cell = []
   end
 
   def fill(mark)
-    valid_characters(mark) ? @contents = mark : raise("invalid character")
+    valid_characters(mark) ? insert(@contents = mark) : raise("invalid character")
+  end
+
+  private
+
+  def insert(contents)
+    @cell[0] = contents
   end
 
   def valid_characters(mark)
