@@ -11,33 +11,11 @@ describe Game do
     end
   end
 
-  describe '#setup for player X' do
-    before do
-      $stdin = StringIO.new(user_input1)
-    end
-
-    after do
-      $stdin = STDIN
-    end
-
-    it 'should set player_x name' do
-      (game.setup_player_x)
-      expect(game.player_x.name).to eq "Tormund"
-    end
-  end
-
-  describe '#setup for player O' do
-    before do
-      $stdin = StringIO.new(user_input2)
-    end
-
-    after do
-      $stdin = STDIN
-    end
-
-    it 'should set player_o name' do
-      (game.setup_player_o)
-      expect(game.player_o.name).to eq "Brienne"
+  describe '#setup for players' do
+    it 'should set both players names' do
+      allow(game.setup).to receive(:gets).and_return(user_input1, user_input2)
+      expect(game.player_o.name).to eq "Tormund"
+      expect(game.player_x.name).to eq "Brienne"
     end
   end
 
