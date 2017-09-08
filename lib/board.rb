@@ -1,6 +1,6 @@
 class Board
 
-  attr_reader :grid
+  attr_reader :grid, :field
 
   def initialize(field = Field.new)
     @grid = []
