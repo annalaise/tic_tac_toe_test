@@ -6,10 +6,8 @@ class Play
     @game = game
   end
 
-
-
   def print_board
-
+    
   end
 
 
