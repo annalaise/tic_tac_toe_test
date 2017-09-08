@@ -23,5 +23,4 @@ class Play
     puts ""
   end
 
-
 end

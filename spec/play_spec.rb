@@ -5,7 +5,8 @@ describe Play do
 
   context '#print board' do
     it 'should print out a 3 x 3 grid' do
-      p play.print_board
+      new_play = Play.new
+      expect { new_play.print_board }.to output("[][][]\n[][][]\n[][][]\n").to_stdout
     end
   end
 end
