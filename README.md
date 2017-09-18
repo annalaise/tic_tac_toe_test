@@ -29,6 +29,7 @@ To plan my solution, I created a Domain Model:
 | move | belongs to a player <br> fills field on board |
 | field | filled with X, O or nil <br> can declare itself empty |
 | board | contains 9 fields in 3 x 3 grid |
+| boardchecker | checks status of board |
 
 ### Test Coverage
 

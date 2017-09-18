@@ -13,20 +13,20 @@ class Game
     setup_player_x
   end
 
+  private
+
   def setup_player_o
     puts "Who is playing with O? Type in a name"
-    @player_o.name = capture_name
+    @player_o.add_name(capture_name)
   end
 
   def setup_player_x
     puts "Who is playing with X? Type in a name"
-    @player_x.name = capture_name
+    @player_x.add_name(capture_name)
   end
 
-  private
-
   def capture_name
-    $stdin.gets.chomp
+    gets.chomp
   end
 
 end

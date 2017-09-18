@@ -11,12 +11,12 @@ describe Game do
     end
   end
 
-  describe '#setup for players' do
-    it 'should set both players names' do
-      allow(game.setup).to receive(:gets).and_return(user_input1, user_input2)
-      expect(game.player_o.name).to eq "Tormund"
-      expect(game.player_x.name).to eq "Brienne"
-    end
-  end
+  # describe '#setup' do
+  #   it 'should set both players names' do
+  #     allow(game.setup).to receive(:gets).and_return(user_input1, user_input2)
+  #     expect(game.player_o.name).to eq "Tormund"
+  #     expect(game.player_x.name).to eq "Brienne"
+  #   end
+  # end
 
 end

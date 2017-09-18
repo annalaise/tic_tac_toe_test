@@ -1,26 +1,18 @@
-class Play
+require 'instructions.rb'
 
-  attr_reader :game, :board, :field
+class Play
+  include Instructions
+
+  attr_reader :game, :board, :current_player
 
   def initialize(game = Game.new)
     @game = game
+    # @game.setup
+    @current_player = @game.player_o.name
   end
 
-  def print_board
-    line(board[0..2])
-    line(board[3..5])
-    line(board[6..8])
-  end
-
-  private
-
-  def board
-    @game.board.grid
-  end
-
-  def line(arr_range)
-    arr_range.each { |field| print "#{field}" }
-    puts ""
+  def player_turn
+    puts "#{@current_player}, please select a square"
   end
 
 end
